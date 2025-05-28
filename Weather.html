@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اپلیکیشن آب و هوا</title>
+    <link rel="stylesheet" href="./CSS/Weather.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="dark">
+        <button class="swich stil" onclick="darkMode()">
+            <i class="bi bi-brightness-low-fill"></i>
+        </button>
+    </div>
+    <div class="weather-app">
+
+        <h1>وضعیت آب و هوا</h1>
+        <div class="weather-info">
+            <input type="text" id="city" placeholder="نام شهر را وارد کنید" />
+            <button onclick="getWeather()">دریافت وضعیت</button>
+            <div id="weather-result">
+                <p id="city-name"></p>
+                <p id="time"></p>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="style">
+        <span class="sun0"></span>
+        <span class="sun1"></span>
+        <span class="sun2"></span>
+        <span class="sun3"></span>
+    </div>
+    <script src="./JavaScript/Weather.js"></script>
+</body>
+
+</html>

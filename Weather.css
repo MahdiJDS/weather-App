@@ -1,0 +1,184 @@
+/* طراحی کلی */
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.weather-app {
+    z-index: 10;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#weather-result {
+    margin-top: 20px;
+}
+
+#temperature {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 18px;
+    color: #555;
+}
+
+#time {
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+.style {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    background-color: skyblue;
+    width: 100%;
+    height: 100vb;
+    /* border-radius: 70px; */
+    /* filter: blur(5px); */
+    top: 10px;
+    left: 0px;
+}
+
+.sun0 {
+    position: absolute;
+    background-color: rgb(223, 228, 230);
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    filter: blur(5px);
+    top: 10px;
+    left: 100px;
+}
+
+.sun1 {
+    position: absolute;
+    background-color: rgb(223, 228, 230);
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    filter: blur(5px);
+    top: 50px;
+    left: 200px;
+}
+
+.sun2 {
+    position: absolute;
+    background-color: rgb(223, 228, 230);
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    filter: blur(5px);
+    top: 50px;
+    left: 00px;
+}
+
+.sun3 {
+    position: absolute;
+    background-color: rgb(210, 230, 32);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    /* filter: blur(5px); */
+    top: 14%;
+    left: 50%;
+    /* transform: transform(-50% -50%); */
+    box-shadow: 0px 0px 20px yellow,
+        0px 0px 10px yellow,
+        0px 0px 50px;
+}
+
+.hiden {
+    opacity: 0;
+}
+
+.darrk {
+    background-color: #555;
+}
+
+.dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+    z-index: 100;
+    /* background-color: black; */
+    /* width: 100px;
+    height: 500px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.dark .swich {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.dark .stil {
+    text-align: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    /* background-color: yellow; */
+    border-radius: 100%;
+}
+
+.dark i {
+   
+    /* transform: scale(1.4); */
+    transition: transform 1s ease-in-out;
+    font-size: 40px;
+    color: gold;
+    /* text-align: center; */
+}
+
+.dark .td i {
+    transform: rotate(180deg);
+}
